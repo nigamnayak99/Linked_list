@@ -28,5 +28,24 @@ public class LinkedListUse {
 		return head;
 	}
 	
+	public static void print(Node<Integer> head) {
+		//saving the head reverence in temp
+		Node<Integer> temp = head;
+		//print the data until we face null as head data
+		while(head != null) {
+			System.out.print(head.data+" ");
+			head = head.next;
+		}
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print("Enter elements of LinkedList until -1");
+		Node<Integer> head = takeInput();
+		System.out.println("Data is ");
+		print(head);
+		
+
+	}
+	
 
 }
