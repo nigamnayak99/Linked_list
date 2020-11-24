@@ -2,10 +2,13 @@ package linked_list_practice;
 import java.util.*;
 
 public class LinkedListUse {
+	
+	
+	
+	
 	/*this function takes input as node data 
 	 * until user puts -1
 	 * */
-	
 	public static Node<Integer> takeInput() {
 		Node<Integer> head = null;//answer is null at first
 		Scanner s = new Scanner(System.in);
@@ -28,6 +31,20 @@ public class LinkedListUse {
 		return head;
 	}
 	
+	
+	
+	//Count Length Function
+	public static int countLength(Node<Integer> head) {
+		int counter = 0;
+		while(head.next != null) {
+			counter = counter + 1;
+		}
+		return counter;
+	}
+	
+	
+	
+	//Print Function
 	public static void print(Node<Integer> head) {
 		//saving the head reverence in temp
 		Node<Integer> temp = head;
@@ -36,16 +53,20 @@ public class LinkedListUse {
 			System.out.print(head.data+" ");
 			head = head.next;
 		}
-		}
+	}
+	
+	//-----------MAIN function------------------
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.print("Enter elements of LinkedList until -1");
 		Node<Integer> head = takeInput();
 		System.out.println("Data is ");
 		print(head);
-		
-
-	}
-	
-
+		int c =countLength(head);
+		System.out.println("length is :"+c);
+		}
 }
+
+
+
+
