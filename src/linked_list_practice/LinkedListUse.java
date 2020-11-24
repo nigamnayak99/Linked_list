@@ -28,13 +28,5 @@ public class LinkedListUse {
 		return head;
 	}
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.print("Enter elements of LinkedList until -1");
-		Node<Integer> head = takeInput();
-		System.out.println("The head is :" +head.data);
-		
-
-	}
 
 }
